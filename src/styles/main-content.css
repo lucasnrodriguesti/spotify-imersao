@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .header__navigation .navigation .arrow-left {
@@ -32,13 +31,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     background: var(--bg-icon);
     background-color: var(--bg-arrow-color);
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
 }
 
 .header__search {
@@ -50,6 +54,10 @@
     background-color: #242424;
     border-radius: 500px;
     border: 1px solid transparent;
+}
+
+.header__search:hover {
+    border: 1px solid #fff;
 }
 
 .header__search img {
@@ -69,12 +77,6 @@
     outline: none;
 }
 
-.header__login {
-    display: flex;
-    align-items: center;
-    margin-left: 228px;
-}
-
 .header__login .subscribe {
     color: #a7a7a7;
     font-size: 16px;
@@ -82,29 +84,29 @@
     background-color: transparent;
     border: none;
     margin-right: 32px;
-    cursor: pointer;
 }
 
 .header__login .subscribe:hover {
+    transform: scale(1.04);
     color: #fff;
-    transform: translateY(3px);
+    cursor: pointer;
 }
 
 .header__login .login {
     width: 100px;
     height: 48px;
     color: #000;
-    background-color: #f1f1f1;
-    border: none;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+    background-color: #fff;
+    border: none;
     cursor: pointer;
 }
 
 .header__login .login:hover {
-    background-color: #a7a7a7;
-    transform: scale(1.05);
+    transform: scale(1.04);
+    cursor: pointer;
 }
 
 /* PLAYLIST */
